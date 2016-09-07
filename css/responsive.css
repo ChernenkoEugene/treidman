@@ -508,6 +508,14 @@
 .slider_sect .bxslider li .slider_cont h3 {
 	font-size: 18px;
 }
+.catalog_block__items .catalog__itm,
+.catalog_block__items .catalog__itm:nth-child(3n) {
+	
+	display: block;
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+}
 }
 @media only screen and (max-width: 480px) {}
 
