@@ -128,3 +128,13 @@
     font-style: normal;
     font-weight: normal;
 }
+/* font-family: "PFDinDisplayPro-Bold"; */
+@font-face {
+    font-family: "PFDinDisplayPro-Bold";
+    src: url("../fonts/PFDinDisplayPro-Bold/PFDinDisplayPro-Bold.eot");
+    src: url("../fonts/PFDinDisplayPro-Bold/PFDinDisplayPro-Bold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/PFDinDisplayPro-Bold/PFDinDisplayPro-Bold.woff") format("woff"),
+    url("../fonts/PFDinDisplayPro-Bold/PFDinDisplayPro-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
