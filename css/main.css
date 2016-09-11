@@ -3617,3 +3617,16 @@ div.check.checked {
 .catalog__itm_summ.cart {
   position: static;
 }
+.catalog__itm.links {
+  max-width: initial;
+  height: 150px;
+    margin-right: 0px;
+}
+
+ .catalog__itm.links .catalog__itm__img {
+  width: 10%;
+ }
+  .catalog__itm.links .catalog__itm_h6 {
+      margin-top: 10px;
+    margin-bottom: 5px;
+}
