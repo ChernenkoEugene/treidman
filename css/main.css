@@ -4113,3 +4113,18 @@ div.check.checked {
     margin-top: 10px;
     margin-bottom: 5px;
 }
+.clockdiv > span:first-of-type {
+     -webkit-animation: blink 1s linear infinite;
+  animation: blink 1s linear infinite;
+}
+
+@-webkit-keyframes blink {
+  50% { color: #4076ae; }
+  51% { color: #fff; }
+  100% { color: #fff; }
+}
+@keyframes blink {
+  50% { color: #4076ae; }
+  51% { color: #fff; }
+  100% { color: #fff; }
+}
