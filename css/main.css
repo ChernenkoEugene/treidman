@@ -4128,3 +4128,10 @@ div.check.checked {
   51% { color: #fff; }
   100% { color: #fff; }
 }
+
+.recently_viewed-block__items li {
+    position: relative;
+}
+.recently_viewed-block__items .catalog__itm_summ {
+    left: 35%;
+}
