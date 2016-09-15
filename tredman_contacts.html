@@ -14,7 +14,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/all.css">
   <link rel="stylesheet" href="css/responsive.css" />
   <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
   <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
@@ -25,7 +24,7 @@
 </head>
 
 <body>
-  <div class="wrapper">
+ <div class="wrapper">
     <header class="top_header">
       <div class="top_header_bl1">
         <div class="container">
@@ -234,22 +233,22 @@
                         <h2>Появились вопросы?</h2>
                         <form class="contacts-ask-form">
                             <fieldset>
-                                <div class="textarea-holder">
-                                    <textarea placeholder="Ваш вопрос"></textarea>
-                                </div>
                                  <div class="input-holder">
                                     <div class="input-row">
                                       <i class="ico ico1"></i>
-                                      <input type="text" placeholder="Ваше имя">
+                                      <input type="text" placeholder="Ваше имя" required>
                                     </div>
                                      <div class="input-row">
                                        <i class="ico ico2"></i>
-                                      <input type="text" placeholder="Телефон">
+                                      <input type="text" placeholder="Телефон" id="cont_tel" required>
                                     </div>
                                      <div class="input-row">
                                        <i class="ico ico3"></i>
-                                      <input type="text" placeholder="E-mail">
+                                      <input type="text" placeholder="E-mail" required>
                                     </div>
+                                </div>
+                                <div class="textarea-holder">
+                                    <textarea placeholder="Ваш вопрос" required></textarea>
                                 </div>
                                 <div class="btn-holder">
                                   <input type="submit" value="отправить">
@@ -364,6 +363,7 @@
     <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/maskedinput.min.js"></script>
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
@@ -410,7 +410,10 @@
         speed: 700,
         easing: 'ease-in'
       });
-
+ jQuery(function($){
+     $("#pop_form_phone").mask("+7(947) 222-2222",{autoclear: false});
+      $("#cont_tel").mask("+7(947) 222-2222",{autoclear: false});
+   });
      });
    </script>
     <script type="text/javascript" src="js/icheck.min.js"></script>

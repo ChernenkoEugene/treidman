@@ -226,8 +226,8 @@
                                         </li>
                                         <li class="col-lg-3 sort_view">
                                           <span class="sort_view_title">Вид:</span>
-                                          <span class="view_icons icons_coubs active"><a href="#"></a></span>
-                                          <span class="view_icons icons_lines"><a href="#"></a></span>
+                                          <span class="view_icons icons_coubs "><a href="#"></a></span>
+                                          <span class="view_icons icons_lines active"><a href="#"></a></span>
                                       </li>
                                   </ul>
                               </form>
@@ -426,6 +426,7 @@
     <script src="js/plugins.js"></script>
     <script src="js/common.js"></script>
     <script src="js/timer.js"></script>
+    <script src="js/maskedinput.min.js"></script>
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script type="text/javascript">     
         $(document).ready(function(){
@@ -449,7 +450,9 @@
                 speed: 700,
                 easing: 'ease-in'
             });
-
+ jQuery(function($){
+     $("#pop_form_phone").mask("+7(947) 222-2222",{autoclear: false});
+   });
         });
     </script>
 </body>

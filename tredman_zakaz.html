@@ -14,6 +14,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/all.css">
   <link rel="stylesheet" href="css/responsive.css" />
   <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
   <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
@@ -173,250 +174,212 @@
             <div class="container">
               <div class="row">
               <div class="col-md-12">
-                <section class="catalog_page">
                   <div class="breadcrumbs">
                     <ul>
                       <li><a class="prevCrumb" href="index.html">Главная</a></li>
                       <li><span class="arwCrumb"><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
-                      <li><a class="currentCrumb" href="#">Акции</a></li>
+                      <li><a class="currentCrumb" href="#">оформление заказа</a></li>
                     </ul>
                   </div>
-                  <div class="basket-table-holder">
-                      <h2>Корзина</h2>
-                    <table class="basket-table">
-                      <thead>
-                          <tr>
-                              <th></th>
-                              <th>Наименование</th>
-                              <th>Цена</th>
-                              <th>Колличество</th>
-                               <th></th>
-                          </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                              <img src="img/img2.png"  alt="image description">
-                          </td>
-                          <td>
-                             <span class="title">Наименование:</span>
-                           <div class="holder">
-                              <h2>Стул рабочи “Лидер”</h2>
-                             <p>Рабочий стул, черный Бумстад черный. Высота сиденья регулируется, обеспечивая максимальный комфорт.</p>
-                           </div>
-                          </td>
-                          <td>
-                                <span class="title">Цена:</span>
-                                <span class="price">18 967 р.</span>
-                          </td>
-                          <td>
-                               <span class="title">Колличество:</span>
-                              <div class="amount">
-                                <a href="#" class="minus">-</a>
-                                <input type="text" value="1">
-                                <a href="#" class="plus">+</a>
+                  <div class="drawing-order">
+                      <h2>Оформление заказа</h2>
+                      <form class="form-order">
+                        <fieldset>
+                          <div class="form-order-block">
+                            <div class="input-box">
+                              <header class="head">
+                                <h2>Информация для отправки счета</h2>
+                              </header>
+                              <div class="row-order">
+                                <label for="alt01"><span>*</span>ФИО:</label>
+                                <input id="alt01" type="text">
                               </div>
-                          </td>
-                            <td>
-                                <a class="close" href="#">
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                          <td>
-                              <img src="img/img3.png"  alt="image description">
-                          </td>
-                          <td>
-                             <span class="title">Наименование:</span>
-                            <div class="holder">
-                              <h2>Стул рабочи “Лидер”</h2>
-                              <p>Рабочий стул, черный Бумстад черный. Высота сиденья регулируется, обеспечивая максимальный комфорт.</p>
+                              <div class="row-order">
+                                <label for="alt02"><span>*</span>Организация:</label>
+                                <input id="alt02" type="text">
+                              </div>
+                              <div class="row-order">
+                                <label for="alt03"><span>*</span>Эл.Почта:</label>
+                                <input id="alt03" type="text">
+                              </div>
+                              <div class="row-order">
+                                <label for="alt04"><span>*</span>Телефон:</label>
+                                <input id="alt04" type="text">
+                              </div>
+                              <div class="row-order">
+                                <label for="alt05"><span>*</span>Адрес:</label>
+                                <input id="alt05"  type="text">
+                              </div>
                             </div>
-                          </td>
-                          <td>
-                              <span class="title">Цена:</span>
-                              <div class="holder">
-                                <del>15 500 р.</del>
-                                <span class="price actually">12 500 р.</span>
+                            <div class="order-holder">
+                              <header class="head">
+                                <h2>Информация о доставке</h2>
+                              </header>
+                             <ul class="check-holder">
+                               <li>
+                                 <div class="row-order">
+                                    <label for="alt06">Самовывоз</label>
+                                   <input id="alt06"  name="group01" class="check" type="radio">
+                                 </div>
+                               </li>
+                                <li>
+                                   <div class="row-order">
+                                   <label for="alt07">Доставка</label>
+                                   <input id="alt07"  name="group01" class="check" type="radio">
+                                   </div>
+                                </li>
+                             </ul>
+                              <address>г. Красноярск, ул. Мечникова, 54</address>
+                              <div class="pay-info">
+                                <header class="head">
+                                  <h2>Информация об оплате</h2>
+                                </header>
+                                 <div class="row-order">
+                                  <label for="alt08">Наличный расчет</label>
+                                 <input id="alt08" name="group02" class="check" type="radio">
+                               </div>
+                                 <div class="row-order">
+                                  <label for="alt09">Безналичный расчет</label>
+                                  <input id="alt09"  name="group02" class="check" type="radio">
+                                </div>
                               </div>
-                          </td>
-                          <td>
-                               <span class="title">Колличество:</span>
-                              <div class="amount">
-                                <a href="#" class="minus">-</a>
-                                <input type="text" value="1">
-                                <a href="#" class="plus">+</a>
-                              </div>
-                          </td>
-                            <td>
-                                <a class="close" href="#">
-                                </a>
-                            </td>
-                        </tr>
-                         <tr>
-                          <td>
-                              <img src="img/img2.png"  alt="image description">
-                          </td>
-                          <td>
-                             <span class="title">Наименование:</span>
-                           <div class="holder">
-                                <h2>Стул рабочи “Лидер”</h2>
-                                  <p>Рабочий стул, черный Бумстад черный. Высота сиденья регулируется, обеспечивая максимальный комфорт.</p>
                             </div>
-                          </td>
-                          <td>
-                              <span class="title">Цена:</span>
-                              <span class="price">18 967 р.</span>
-                          </td>
-                          <td>
-                               <span class="title">Колличество:</span>
-                              <div class="amount">
-                                <a href="#" class="minus">-</a>
-                                <input type="text" value="1">
-                                <a href="#" class="plus">+</a>
-                              </div>
-                          </td>
-                            <td>
-                                <a class="close" href="#">
-                                </a>
-                            </td>
-                        </tr>
-                          <tr>
-                          <td class="empty">
-                          </td>
-                          <td colspan="4">
-                           <span class="total">Итого: 42 230 р.</span>
-                           <a href="#" class="btn">Оформить заказ</a>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                          </div>
+                           <div class="form-order-block">
+                              <div class="input-box">
+                                  <header class="head">
+                                      <h2>Ваши комментарии к заказу</h2>
+                                   </header>
+                                   <textarea placeholder="Ваши комментарии к заказу" id="alt10" ></textarea>
+                            </div>
+                            <div class="order-holder conditions">
+                               <div class="row-order">
+                                <header class="head">
+                                     <h2>Условия обслуживания</h2>
+                                 </header>
+                                <label for="alt11">Я согласен с условиями обслуживания</label>
+                                <input id="alt11" class="check" type="checkbox">
+                                </div>
+                                <a href="#" class="btn-info">Условия обслуживания</a>
+                            </div>
+                          </div>
+                          <table class="basket-table">
+                            <thead>
+                              <tr>
+                                  <th>Название</th>
+                                  <th>Доступность</th>
+                                  <th>Количество</th>
+                                  <th>Цена</th>
+                                  <th>Промежуточный итог</th>
+                                  <th></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                              <td>
+                                  <div class="visual">
+                                    <img src="img/img5.png"  alt="image description">
+                                  </div>
+                                  <h2>Стул рабочи “Лидер”</h2>
+                              </td>
+                              <td>
+                                  <span class="title">Доступность:</span>
+                                  Под заказ
+                              </td>
+                              <td>
+                                   <span class="title">Колличество:</span>
+                                  <div class="amount">
+                                    <a href="#" class="minus">-</a>
+                                    <input type="text" value="1">
+                                    <a href="#" class="plus">+</a>
+                                  </div>
+                              </td>
+                              <td>
+                                  <span class="title">Цена:</span>
+                                  <span class="price">18 967 р.</span>
+                              </td>
+                              <td>
+                                  <span class="title">Промежуточный итог:</span>
+                                  <span class="price">18 967 р.</span>
+                              </td>
+                                <td>
+                                    <a class="close" href="#">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                  <div class="visual">
+                                    <img src="img/img5.png"  alt="image description">
+                                  </div>
+                                  <h2>Стул рабочи “Лидер”</h2>
+                              </td>
+                              <td>
+                                <span class="title">Доступность:</span>
+                                 Под заказ
+                              </td>
+                              <td>
+                                   <span class="title">Колличество:</span>
+                                  <div class="amount">
+                                    <a href="#" class="minus">-</a>
+                                    <input type="text" value="1">
+                                    <a href="#" class="plus">+</a>
+                                  </div>
+                              </td>
+                              <td>
+                                  <span class="title">Цена:</span>
+                                  <span class="price">18 967 р.</span>
+                              </td>
+                              <td>
+                                  <span class="title">Промежуточный итог:</span>
+                                  <span class="price">18 967 р.</span>
+                              </td>
+                                <td>
+                                    <a class="close" href="#">
+                                    </a>
+                                </td>
+                            </tr>
+                             <tr>
+                              <td>
+                                  <div class="visual">
+                                   <img src="img/img5.png"  alt="image description">
+                                  </div>
+                                  <h2>Стул рабочи “Лидер”</h2>
+                              </td>
+                              <td>
+                                  <span class="title">Доступность:</span>
+                                  Под заказ
+                              </td>
+                              <td>
+                                   <span class="title">Колличество:</span>
+                                  <div class="amount">
+                                    <a href="#" class="minus">-</a>
+                                    <input type="text" value="1">
+                                    <a href="#" class="plus">+</a>
+                                  </div>
+                              </td>
+                              <td>
+                                  <span class="title">Цена:</span>
+                                  <span class="price">18 967 р.</span>
+                              </td>
+                              <td>
+                                  <span class="title">Промежуточный итог:</span>
+                                  <span class="price">18 967 р.</span>
+                              </td>
+                                <td>
+                                    <a class="close" href="#">
+                                    </a>
+                                </td>
+                            </tr>
+                            </tbody>
+                          </table>
+                          <div class="submit-holder">
+                                <span class="total">Итого: 42 230 р.</span>
+                                <input type="submit"  value="Оформить заказ">
+                          </div>
+                        </fieldset>
+                      </form>
                   </div>
-
-                  <div class="catalog_page_coubs clearfix similar_items">
-                    <h3 class="section_h3">Похожие товары</h3>
-                    <div class="col-sm-3 catalog_coubs__item">
-                      <h6 class="catalog_coubs__item_h6">Бытовая химия</h6>
-                      <div class="catalog__itm__sticker new_sticker">New<span class="triangle"></span></div>
-                      <div class="catalog_coubs__itm__img"><img src="img/catalog_item.jpg" alt=""></div>
-                      <span class="catalog__itm_avail non">Нет в наличии</span>
-                      <div class="catalog__itm_summ">
-                        <span class="old_summ">18 967 р.</span>
-                        <span class="new_summ">9 967 р.</span>
-                      </div>
-                      <div class="add2">
-                        <span class="add2_icon"></span>
-                        <span>В корзину</span>
-                      </div>
-                    </div>
-                    <div class="col-sm-3 catalog_coubs__item">
-                      <h6 class="catalog_coubs__item_h6">Бытовая химия</h6>
-                      <div class="catalog__itm__sticker sale_sticker">Скидка<span class="triangle"></span></div>
-                      <div class="catalog_coubs__itm__img"><img src="img/catalog_item.jpg" alt=""></div>
-                      <span class="catalog__itm_avail">В наличии</span>
-                      <div class="catalog__itm_summ">18 967 р.</div>
-                      <div class="add2">
-                        <span class="add2_icon"></span>
-                        <span>В корзину</span>
-                      </div>
-                    </div>
-                    <div class="col-sm-3 catalog_coubs__item">
-                      <h6 class="catalog_coubs__item_h6">Бытовая химия</h6>
-                      <div class="catalog__itm__sticker hit_sticker">Хит<span class="triangle"></span></div>
-                      <div class="catalog_coubs__itm__img"><img src="img/catalog_item.jpg" alt=""></div>
-                      <span class="catalog__itm_avail">В наличии</span>
-                      <div class="catalog__itm_summ">18 967 р.</div>
-                      <div class="add2">
-                        <span class="add2_icon"></span>
-                        <span>В корзину</span>
-                      </div>
-                    </div>
-                    <div class="col-sm-3 catalog_coubs__item">
-                      <h6 class="catalog_coubs__item_h6">Бытовая химия</h6>
-                      <div class="catalog__itm__sticker new_sticker">New<span class="triangle"></span></div>
-                      <div class="catalog_coubs__itm__img"><img src="img/catalog_item.jpg" alt=""></div>
-                      <span class="catalog__itm_avail non">Нет в наличии</span>
-                      <div class="catalog__itm_summ">
-                        <span class="old_summ">18 967 р.</span>
-                        <span class="new_summ">9 967 р.</span>
-                      </div>
-                      <div class="add2">
-                        <span class="add2_icon"></span>
-                        <span>В корзину</span>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section class="recently-viewed">
-                 <h3 class="section_h3">Вы уже смотрели</h3>
-                 <ul class="recently_viewed-block__items clearfix">
-                     <li class="col-sm-3 col-md-3">
-                        <div class="visual">
-                         <img src="img/img4.png" alt="Новость">
-                        </div>
-                        <div class="holder-text">
-                            <h6 class="catalog_coubs__item_h6">Стул рабочи “Лидер”</h6>
-                            <div class="catalog__itm_summ">
-                                <span class="old_summ">18 967 р.</span>
-                                <span class="new_summ">9 967 р.</span>
-                            </div>
-                        </div>
-                     </li>
-                     <li class="col-sm-3 col-md-3">
-                        <div class="visual">
-                         <img src="img/img4.png" alt="Новость">
-                        </div>
-                        <div class="holder-text">
-                            <h6 class="catalog_coubs__item_h6">Стул рабочи “Лидер”</h6>
-                            <div class="catalog__itm_summ">
-                                <span class="old_summ">18 967 р.</span>
-                                <span class="new_summ">9 967 р.</span>
-                            </div>
-                        </div>
-                     </li>
-                     <li class="col-sm-3 col-md-3">
-                        <div class="visual">
-                         <img src="img/img4.png" alt="Новость">
-                        </div>
-                        <div class="holder-text">
-                            <h6 class="catalog_coubs__item_h6">Стул рабочи “Лидер”</h6>
-                            <div class="catalog__itm_summ">
-                                <span class="old_summ">18 967 р.</span>
-                                <span class="new_summ">9 967 р.</span>
-                            </div>
-                        </div>
-                     </li>
-                     <li class="col-sm-3 col-md-3">
-                        <div class="visual">
-                         <img src="img/img4.png" alt="Новость">
-                        </div>
-                        <div class="holder-text">
-                            <h6 class="catalog_coubs__item_h6">Стул рабочи “Лидер”</h6>
-                            <div class="catalog__itm_summ">
-                                <span class="old_summ">18 967 р.</span>
-                                <span class="new_summ">9 967 р.</span>
-                            </div>
-                        </div>
-                     </li>
-                 </ul>
-             </section>
-                <section class="brand_block">
-                  <h3 class="section_h3">Бренды</h3>
-                  <div class="brand_slider">
-                    <ul class="bxslider" id="brand_slider1">
-                      <li><img src="img/brand_slide.jpg" alt=""></li>
-                      <li><img src="img/brand_slide.jpg" alt=""></li>
-                      <li><img src="img/brand_slide.jpg" alt=""></li>
-                      <li><img src="img/brand_slide.jpg" alt=""></li>
-                      <li><img src="img/brand_slide.jpg" alt=""></li>
-                      <li><img src="img/brand_slide.jpg" alt=""></li>
-                      <li><img src="img/brand_slide.jpg" alt=""></li>
-                      <li><img src="img/brand_slide.jpg" alt=""></li>
-                      <li><img src="img/brand_slide.jpg" alt=""></li>
-                      <li><img src="img/brand_slide.jpg" alt=""></li>
-                    </ul>
-                  </div>
-                </section>
               </div>
             </div>
           </div>
@@ -570,14 +533,12 @@
         speed: 700,
         easing: 'ease-in'
       });
-
-   jQuery(function($){
+ jQuery(function($){
      $("#pop_form_phone").mask("+7(947) 222-2222",{autoclear: false});
    });
-  
      });
    </script>
-   <script type="text/javascript" src="js/icheck.min.js"></script>
+    <script type="text/javascript" src="js/icheck.min.js"></script>
     <script src="js/jquery.main.js"></script>
  </body>
 

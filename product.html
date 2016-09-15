@@ -167,7 +167,7 @@
                       </div><!-- .tabs -->
                     </div>
                     <div class="col-sm-5">
-                      <div class="prod_descr">
+                      <div class="prod_descr wider">
                         <h6 class="tabs_h6">Основные характеристики</h6>
                         <p class="tabs__txt">Рабочий стул, черный Бумстад черный. Высота сиденья регулируется. Рабочий стул, черный Бумстад черный.</p>
                         <h6 class="tabs_h6">Размеры товара </h6>
@@ -436,6 +436,7 @@
     <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/maskedinput.min.js"></script>
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
@@ -470,7 +471,9 @@
         speed: 700,
         easing: 'ease-in'
       });
-
+ jQuery(function($){
+     $("#pop_form_phone").mask("+7(947) 222-2222",{autoclear: false});
+   });
      });
    </script>
  </body>

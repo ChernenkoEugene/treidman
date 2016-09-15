@@ -31,6 +31,10 @@ $(document).ready(function() {
             $(".paginator .next").html(">");
         }
     });
+     $(".opn_hdn").on('click', function() {
+        $('.hdn').slideToggle(200);
+        
+    });
     /* ==============================filter=========================*/
 
 
@@ -109,4 +113,5 @@ $(document).ready(function() {
 
         });
     })(jQuery);
+
 });

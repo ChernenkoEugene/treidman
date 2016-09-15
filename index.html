@@ -426,6 +426,7 @@
     <script src="js/plugins.js"></script>
     <script src="js/common.js"></script>
     <script src="js/timer.js"></script>
+    <script src="js/maskedinput.min.js"></script>
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script type="text/javascript">     
         $(document).ready(function(){
@@ -433,7 +434,7 @@
                 mode: 'horizontal',
                 controls: true,
                 pager: true,
-                auto: false,
+                auto: true,
                 speed: 700,
                 easing: 'ease-in'
             });
@@ -449,7 +450,9 @@
                 speed: 700,
                 easing: 'ease-in'
             });
-
+ jQuery(function($){
+     $("#pop_form_phone").mask("+7(947) 222-2222",{autoclear: false});
+   });
         });
     </script>
 </body>

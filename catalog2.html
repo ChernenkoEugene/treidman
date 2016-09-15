@@ -104,9 +104,17 @@
             <div class="container">
               <div class="row">
                 <aside class="col-md-3 left_aside">
-                  <ul class="left_aside__menu">
-                    <li><a href="#">Каталог товаров<span class="arw"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                   <ul class="left_aside__menu">
+                    <li class="opn_hdn"><a href="#">Каталог товаров<span class="arw"><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
                     </li>
+                    <li class="menu_link hdn"><a href="#">Офисная мебель<span class="arw_sm"><i class="fa fa-angle-right" aria-hidden="true"></i></span></a></li>
+                    <li class="menu_link hdn"><a href="#">Бытовая химия<span class="arw_sm"><i class="fa fa-angle-right" aria-hidden="true"></i></span></a></li>
+                    <li class="menu_link hdn"><a href="#">Хозтовары<span class="arw_sm"><i class="fa fa-angle-right" aria-hidden="true"></i></span></a></li>
+                    <li class="menu_link hdn"><a href="#">Средства реабилитации<span class="arw_sm"><i class="fa fa-angle-right" aria-hidden="true"></i></span></a></li>
+                    <li class="menu_link hdn"><a href="#">Оборудование<span class="arw_sm"><i class="fa fa-angle-right" aria-hidden="true"></i></span></a></li>
+                    <li class="menu_link hdn"><a href="#">Продукты питания<span class="arw_sm"><i class="fa fa-angle-right" aria-hidden="true"></i></span></a></li>
+                    <li class="menu_link hdn"><a href="#">Гигиена<span class="arw_sm"><i class="fa fa-angle-right" aria-hidden="true"></i></span></a></li>
+
                   </ul>
                   <div class="catalog_filter">
                    <form action="#" method="post">
@@ -538,6 +546,7 @@
     <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/maskedinput.min.js"></script>
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
@@ -572,7 +581,9 @@
         speed: 700,
         easing: 'ease-in'
       });
-
+ jQuery(function($){
+     $("#pop_form_phone").mask("+7(947) 222-2222",{autoclear: false});
+   });
      });
    </script>
  </body>
