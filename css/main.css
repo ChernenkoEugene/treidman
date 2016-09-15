@@ -4135,3 +4135,8 @@ div.check.checked {
 .recently_viewed-block__items .catalog__itm_summ {
     left: 35%;
 }
+.services-holder h2 {
+        font-size: 36px;
+    font-family: "pfdintextcomppro-medium", sans-serif;
+    color: #323232;
+}
